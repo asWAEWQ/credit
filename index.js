@@ -15,7 +15,7 @@ client.on("message", message => {
       function LoL(){
         client.channels.get(cid).send(Math.random().toString(36).substring(7));
       }
-      nigga = setInterval(LoL,305);
+      nigga = setInterval(LoL,1000);
       break;
     case "off":
       clearInterval(nigga);
