@@ -21,13 +21,10 @@ client.on("message", message => {
       clearInterval(nigga);
       break;
   };
-  
-  client.on('message', message => {
-if(message.content.startsWith('say')) {
-if(message.author.id !== "314135031029170197") return;
-var args = message.content.split(' ').slice(1).join(' ');
-message.channel.send(args);
-}
+  if (message.content.startsWith('say')) {
+      var args = message.content.split(" ");
+      if (!args[1]) return;
+      message.channel.send(args.join(" ").slice(args[1].length));
+  }
 });
-  
 client.login(process.env.BOT_TOKEN);
