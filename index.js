@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var cid = ""; // آيدي الروم هنا
+var cid = "503661852350349312"; // آيدي الروم هنا
 var nigga;
 client.on('warn', console.warn);
 client.on('error', console.error);
