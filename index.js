@@ -28,9 +28,6 @@ if (!nigga) return;
       message.channel.send(args.join(" ").slice(args[0].length));
   }
 });
-
-
-
 client.on('message', message => {
 if(message.content === prefix+ "restart") {
          message.channel.send(`⚠️ **الشخص الذي اعاد تشغيل البوت ${message.author.username}**`);
@@ -40,7 +37,5 @@ if(message.content === prefix+ "restart") {
         console.log(`تم اعادة تشغيل البوت`);
     };
   });
-
-
 client.login(process.env.BOT_TOKEN);
  
