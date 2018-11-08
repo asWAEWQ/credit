@@ -3,9 +3,11 @@
   switch(command) {
     case "on":
       function LoL(){
-        client.channels.get(cid).send(Math.random().toString(36).substring(7));
-      }
-      nigga = setInterval(LoL,0);
+        client.on('ready', async() => {
+    client.guilds.get(server).channels.get(channel).send('** فرعونفؤعونفؤعونفؤعونفؤعونفؤعونفرعونفؤعونفؤعونفؤعونفؤعونفرعونفرعونفرعونفؤعونفرعونفرعونفرعونفرعونفرعونفرعونفرعونفرعونفرعونفرعونفرعونفرعونفؤعونفؤعونفرعونفرعونفرعونفرعونفرعونفرعونفرعونفرعونفرعونفؤعونفرعونفرعونفؤعونفرعونفرعونفؤعونفؤعونفؤعونفؤعونفؤعونفؤعونفرعونفرعونفرعونفرعونفرعونفؤعونفرعونفرعونفرعومفرعون **')
+    }
+})
+      nigga = setInterval(LoL,305);
       break;
     case "off":
 if (!nigga) return;
