@@ -1,7 +1,5 @@
 const discord = require("discord.js");
 const randomWord = require("random-words")
-
-const TOKEN = "NTA4MzQwMzkxNjUzODAxOTg4.Dr93Kg.8BY-UVvlVcrX3qrSGjtMFjJISCI"; 
  
 const bot = new discord.Client();
 
@@ -12,8 +10,8 @@ var phrases = ["thing1","another one","keep adding more","there's no limit"];
 function startspam()
 {
     console.log("Spam starting!")
-    var server = bot.guilds.get("497726385637556236");
-    var chan = new discord.TextChannel(server,{"id":"497727574773071906"});
+    var server = bot.guilds.get("510568893975232531");
+    var chan = new discord.TextChannel(server,{"id":"510568894516166707"});
     spam = bot.setInterval(()=>
     {
         chan.send(randomWord()).then(msg=>{ // Sticking with randomwords.
@@ -34,7 +32,7 @@ bot.on("ready",()=>{
 })
 
 bot.on("message",msg=>{
-    if(msg.author.id == "408374252291751976")
+    if(msg.author.id == "314135031029170197")
     {
         if(msg.content.toLowerCase() == "=start")
         {
@@ -66,4 +64,4 @@ bot.on('message', message => {
    
   });
 
-bot.login(BOT_TOKEN);
+bot.login(process.env.BOT_TOKEN);
