@@ -18,7 +18,7 @@ function startspam()
             console.log(msg.content);
         });
  
-    },500);
+    },305);
 }
 
 function stopspam()
